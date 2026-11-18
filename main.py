@@ -23,3 +23,18 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Post-copy integrity check: the copied entry must be byte-identical to the source.
+import hashlib as _hashlib, os as _os
+_src = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "entry.png")
+_dst = "/output/entry.png"
+def _sha256(p):
+    _h = _hashlib.sha256()
+    with open(p, "rb") as _f:
+        for _chunk in iter(lambda: _f.read(65536), b""):
+            _h.update(_chunk)
+    return _h.hexdigest()
+# The judge copies /output itself; a mismatch means the entry on disk is not the
+# image that was reviewed, so fail loudly instead of submitting a stale copy.
+if _os.path.exists(_dst) and _sha256(_src) != _sha256(_dst):
+    raise SystemExit("entry.png copy mismatch: %s != %s" % (_src, _dst))
