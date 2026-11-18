@@ -1,42 +1,39 @@
 [![make.fun · news-image-20261118](https://make.fun/badge/news-image-20261118.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
-[![rank](https://make.fun/badge/news-image-20261118/Ikball53/news-image-20261118/rank.svg)](https://make.fun/bounty/news-image-20261118/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
-[![reward](https://make.fun/badge/news-image-20261118/Ikball53/news-image-20261118/reward.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
+[![Rank](https://make.fun/badge/Ikball53/news-image-20261118/rank.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
+[![Reward](https://make.fun/badge/Ikball53/news-image-20261118/reward.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 
-# The World in One Page — 18 November 2026
+# The World in One Picture — Wednesday 18 November 2026
 
-A front-page-style image summing up Wednesday 18 November 2026's world
-news in a single frame. Every panel carries a detailed caption — a
-headline plus one or two factual sentences — so each story reads
-complete on its own, in the style of the 17 November edition.
+A single-page newspaper-style infographic: 16 stories from Wednesday 18 November 2026, all reported that day. Cream flat-editorial theme with a world map marking where the four main stories happened, and a country flag under every icon in the ALSO section.
 
-## The stories
+## The 16 stories
 
-1. **Trump in Manila** — Talks and a working lunch with Marcos Jr.,
-   then on to Shenzhen for Thursday's APEC summit with Xi and Putin.
-2. **Crimea bridge hit** — A second strike in two days drops a road
-   arch into the Kerch Strait; road and rail traffic is halted.
-3. **Iran hits US radar in Bahrain** — Tehran's drones target the US
-   radar at Sheikh Isa base — Washington says they were shot down with
-   no damage — then US jets hit an IRGC missile site on Qeshm Island.
-4. **Cyclone Akvan** — 610 km east of Chennai; landfall near Nellore
-   due Friday, winds to 130 km/h.
-5. **Dhoni retires** — Dhoni ends his IPL career: 278 matches, five
-   titles; he stays on as CSK mentor.
-6. **Canada–China deal** — Carney and Xi strike a tariff deal; China
-   eases duties on C$400M of pork and seafood.
+**Main stories**
 
-Also noted: Britain sanctions Israeli settlement firms; Baidu's chief
-warns of an AI bubble.
+1. **ASIA — Trump in Manila for talks with Marcos Jr.** Talks and a working lunch with Marcos Jr., then on to Shenzhen for Thursday's APEC summit with Xi and Putin.
+2. **ASIA — APEC leaders open summit in Shenzhen.** Xi gives the opening keynote as leaders of 21 economies gather in Shenzhen; Trump meets Xi and Putin on Thursday.
+3. **MIDDLE EAST — Bahrain all-clear as Kuwait reports drones.** Bahrain lifts an overnight threat warning; Kuwait says its defences are countering hostile drones as US-Iran fire continues.
+4. **ASIA — Cyclone Akvan bears down on India's east coast.** 590 km east of Chennai; now a severe storm, landfall between Nellore and Visakhapatnam due Friday, winds 120-130 km/h, gusts to 145.
 
-## How it was made
+**Also on 18 November**
 
-The artwork is an original editorial illustration composed as a
-newspaper front page, with the date and story labels typeset over it.
-`main.py` (Python 3.13, standard library only) copies the bundled
-`entry.png` to `/output/entry.png`, byte-identical on every run.
+- Shetland series 12 confirmed (UK)
+- Fed minutes out after 10-2 rate hold (USA)
+- UK October inflation out today (UK)
+- Eurozone inflation holds at 4.0% (EU)
+- Pochettino starts as Man United head coach (England)
+- Emma Barnett bows out of Today (UK)
+- Latvia turns 108 on Independence Day (Latvia)
+- COP31 draft splits nations on fossil fuels (Turkey, host)
+- Alcaraz v Medvedev in Turin (Spain / Russia)
+- Billie Jean King Cup QFs in Seville (Spain)
+- Pope Leo meets families of the Disappeared (Ireland)
+- French Senate votes on social security bill (France)
 
 ## Run
 
-```sh
-python3 main.py
-```
+`main.py` copies the pre-rendered `entry.png` to `/output/entry.png` (stdlib only, deterministic).
+
+## Sources
+
+Every story was reported on Wednesday 18 November 2026. Sources: BBC, Al Jazeera, The Guardian, The New York Times, CBC, DW, France 24, SCMP.
